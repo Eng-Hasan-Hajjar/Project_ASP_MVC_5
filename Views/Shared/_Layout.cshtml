@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <!--header-->
+    <link href="~/Content/style.css" rel="stylesheet" />
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+ 
+              @*  @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+
+             <!--call partail-->
+        
+                <ul class="nav navbar-nav navbar-right">
+                   
+                 
+                   
+                    <li>
+                        <a href="#">الرئيسيه <i class="glyphicon glyphicon-home" > </i>  </a>
+                    </li>
+                    <li>
+                        <a href="#">اصناف العروض <i class="glyphicon glyphicon-folder-open"> </i> </a>
+                    </li>
+
+                    <li>
+                        <a href="#"> حول الموقع <i class="glyphicon glyphicon-info-sign" ></i></a>
+                    </li>
+                    <li>
+                        <a href="#">اتصل بنا <i class="glyphicon glyphicon-envelope"> </i> </a>
+                    </li>
+                    <a href="#" class="navbar-brand navbar-right">
+                        <img src="~/images/FB_IMG_1465943506563.jpg" class="logo-size"/ >
+                    @*</a>
+                    <li>@Html.ActionLink("اصناف العروض", "#", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "#", "Home")</li>*@
+                </ul>
+                
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+                <div id="body"  class="container body-content">
+                    @RenderBody()
+                 </div>
+        <!--footer-->
+        <footer  class="navbar navbar-fixed-bottom " >
+            <div class="container">
+                <div class="row">
+
+
+                    <div class="col-md-4 ">
+                        <h3>اتصل بنا <i class="glyphicon glyphicon-envelope"> </i></h3>
+
+                        <ul>
+                            <li><a href="#">وظائف للقطاع العام</a></li>
+                            <li><a href="#">وظائف للقطاع الخاص</a></li>
+                            <li><a href="#">وظائف خارج البلاد</a></li>
+                            <li><a href="#">وظائف متنوعه</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 ">
+                        <h3> روابط هامه <i class="glyphicon glyphicon-globe"> </i></h3>
+                        <ul>
+                            <li><a href="#">صفحتنا على الفيسبوك</a></li>
+                            <li><a href="#">تابعنا على تويتر</a></li>
+                            <li><a href="#">شاهدنا على اليوتيوب</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 ">
+                        <h3>من نحن <i class="glyphicon glyphicon-info-sign"></i> </h3>
+                        <p>اهلا وسهلا بكم في موقعنا نتشرف بزيارتكم ونستمع لارائكم الهادفه ونطمح لتقديم الافضل دائما</p>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="subfooter">
+                
+                    <h3> <span>  جميع الحقوق محفوظه لعام2017 </span></h3>
+            
+            </div>
+
+        </footer>
+       
+
+   
+
+    @*@Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)*@
+</body>
+</html>

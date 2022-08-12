@@ -1,0 +1,55 @@
+﻿.navbar-inverse {
+    background-color: #19334c;
+    border-color: #a54343;
+}
+#body
+{
+    padding-top:20px;
+    padding-bottom:100px;
+
+}
+.navbar-fixed-bottom
+{ 
+ 
+    
+    position:initial;
+     background: #36a8b5;
+}
+
+a {
+     padding: 10px;
+    color: aliceblue;
+    text-decoration: none;
+}
+a:hover {
+ 
+    color:#fff;
+
+}
+
+h3, .h3 {
+    font-size: 24px;
+    color: #10040a;
+    font-family: 'Franklin Gothic';
+    margin: 20px;
+    padding: 10px;
+
+}
+h3, .h3 {
+    font-size: 24px;
+    color: #10040a;
+    font-family: 'Franklin Gothic';
+    margin: 20px;
+    padding: 10px;
+}
+p {
+    margin: 0 0 10px;
+    color: azure;
+}
+.logo-size{
+    width:25px;
+    height:25px;
+}
+
+
+
